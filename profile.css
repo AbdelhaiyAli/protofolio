@@ -1,0 +1,183 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: "Momo Trust Display", sans-serif;
+        background-color: #F5F7FF;
+    }
+    nav ul {
+        z-index: 10;
+        width: 90%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #4A6CF7;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        list-style: none;
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    nav ul li a {
+        text-decoration: none;
+        font-family: "Fjalla One", sans-serif;
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #F5F7FF;
+        transition: 0.3s ;
+    }
+    nav ul li a:hover {
+        background-color: #F5F7FF;
+        color: #1f1f1f;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    main section {
+        padding: 20px;
+        width: 90%;
+        border-radius: 20px;
+        margin: 90px auto;
+        background-color: #FFFFFF;
+        min-height: 300px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+        text-align: center;
+        color: #1f1f1f;
+        font-size: 28px;
+    }
+    .divider {
+        width: 80%;
+        margin: 10px auto 20px;
+        border: 1px solid #4A6CF7;
+        opacity: 0.4;
+    }
+    .profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 20px;
+        color: #606060;
+    }
+    .profile img {
+        border: 4px solid #4a6df784;
+        border-radius: 50%;
+        width: 180px;
+        transition: 0.4s;
+    }
+    .profile img:hover {
+        transform: scale(1.1);
+    }
+    .box {
+        margin: auto;
+        padding: 20px;
+        width: 90%;
+        border: 1px solid #4a6df75e;
+        border-radius: 20px;
+        line-height: 1.8;
+        color: #606060;
+        font-size: 16px;
+        background-color: #fff;
+    }
+    h2 {
+        color: #616161;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        font-size: 22px;
+        text-align: center;
+    }
+    .continer1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .item {
+        width: 180px;
+        height: 220px;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+    .item img {
+        width: 80px;
+    }
+    .item span {
+        text-transform: uppercase;
+        margin-top: 15px;
+        font-size: 18px;
+        color: #606060;
+    }
+    .item:hover {
+        transform: scale(1.05);
+    } 
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    form input, form textarea {
+        width: 90%;
+        max-width: 350px;
+        height: 45px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding: 10px 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 16px;
+        color: #1f1f1f;
+    }
+    textarea {
+        height: 100px;
+    }
+    input::placeholder, textarea::placeholder {
+        color: #4A6CF7;
+    }
+
+    input[type="submit"] {
+        background-color: #4A6CF7;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    input[type="submit"]:hover {
+        transform: scale(1.05);
+    }
+    footer {
+        width: 100%;
+        padding: 15px 0;
+        background-color: #4A6CF7;
+        color: white;
+        text-align: center;
+        margin-top: 40px;
+        font-size: 18px;
+        position: relative;
+    }
+    @media (max-width: 600px) {
+        nav ul li a {
+            font-size: 1em;
+        }
+        .item {
+            width: 150px;
+            height: 190px;
+        }
+        .profile p {
+            font-size: 18px;
+        }
+    }
