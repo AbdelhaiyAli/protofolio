@@ -6,16 +6,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Momo+Trust+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="profile.css">
+<link rel="stylesheet" href="../css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="container">
+                <a href="" class="navbar-brand">logo</a>
+                <button type="button" class="burger-btn" id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="navbar-nav" id="menu">
+                    <li class="navbar-item"><a class="navbar-link active" href="#home">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#skill">Skills</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -88,5 +95,6 @@
     <footer>
         <p>© 2025 Abd Elrahman | All Rights Reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
